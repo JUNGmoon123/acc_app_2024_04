@@ -51,4 +51,9 @@ public class MemberService {
 
         return newRestCash;
     }
+    public long getRestCash(Member member) {
+        Member foundMember = findByUsername(member.getUsername()).get();
+
+        return foundMember.getRestCash();
+    }
 }
