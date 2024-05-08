@@ -1,4 +1,3 @@
-
 package com.koreait.exam.acc_app_2024_04.app.order.entity;
 
 import com.koreait.exam.acc_app_2024_04.app.base.entity.BaseEntity;
@@ -88,6 +87,7 @@ public class Order extends BaseEntity {
 
         this.name = name;
     }
+
     public boolean payable() {
         if (isPaid) return false;
         if (isCanceled) return false;

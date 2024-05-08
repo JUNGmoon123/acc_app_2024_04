@@ -1,4 +1,3 @@
-
 package com.koreait.exam.acc_app_2024_04.app.member.service;
 
 import com.koreait.exam.acc_app_2024_04.app.cash.entity.CashLog;
@@ -51,6 +50,7 @@ public class MemberService {
 
         return newRestCash;
     }
+
     public long getRestCash(Member member) {
         Member foundMember = findByUsername(member.getUsername()).get();
 

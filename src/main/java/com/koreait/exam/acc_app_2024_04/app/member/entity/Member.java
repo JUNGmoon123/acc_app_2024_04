@@ -1,3 +1,4 @@
+
 package com.koreait.exam.acc_app_2024_04.app.member.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -23,6 +24,7 @@ public class Member extends BaseEntity {
     private String email;
     private boolean emailVerified;
     private long restCash;
+
     public String getName() {
         return username;
     }
