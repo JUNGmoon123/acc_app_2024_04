@@ -23,4 +23,7 @@ public class Song extends BaseEntity {
     private String content;
     @ManyToOne(fetch = LAZY)
     private Member author;
+    public String getJdenticon() {
+        return "song__" + getId();
+    }
 }
